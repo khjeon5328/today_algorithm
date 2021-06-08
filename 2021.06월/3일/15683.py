@@ -37,7 +37,10 @@ def bfs(info, i):
                     arr[ny][nx] = '#'
                     q.append((ny, nx, d))
     elif i == 4:
-        pass
+        while q:
+            y, x, d = q.popleft()
+            if not d:
+                pass
     elif i == 3:
         pass
     elif i == 2:
